@@ -10,7 +10,7 @@ class ODBCDriverConnector extends Connector implements ConnectorInterface
 	public function connect(array $config)
 	{
 		$dsn = $this->getDsn($config);
-		
+
         $options = $this->getOptions($config);
 
         $connection = $this->createConnection($dsn, $config, $options);
@@ -21,7 +21,7 @@ class ODBCDriverConnector extends Connector implements ConnectorInterface
 	protected function getDsn(array $config) {
         extract($config);
 
-        $dsn = "odbc:{$dsn}; {$username}; {$password};";
+        $dsn = "odbc:{$dsn}";
 
         return $dsn;
     }

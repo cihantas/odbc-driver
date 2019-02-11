@@ -1,6 +1,6 @@
 {
-    "name": "garylocke/odbc-driver",
-    "description": "Laravel 5.1 ODBC Driver",
+    "name": "seth-moore/odbc-driver",
+    "description": "Laravel 5.x ODBC Driver",
     "keywords": ["odbc", "driver", "laravel", "5.1"],
     "authors": [
         {
@@ -13,9 +13,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=5.4.0",
         "ext-pdo_odbc": "*",
-	"laravel/framework": "5.1.*"
+	"laravel/framework": "5.*"
     },
     "autoload": {
         "classmap": [
