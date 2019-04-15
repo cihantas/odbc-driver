@@ -1,12 +1,8 @@
 {
     "name": "seth-moore/odbc-driver",
     "description": "Laravel 5.x ODBC Driver",
-    "keywords": ["odbc", "driver", "laravel", "5.x"],
+    "keywords": ["odbc", "driver", "laravel", "5.1"],
     "authors": [
-        {
-            "name": "Seth Moore",
-            "email": "seth.moore0@gmail.com"
-        },
         {
             "name": "Gary Locke",
             "email": "gary.locke.dev@gmail.com"
@@ -25,8 +21,9 @@
         "classmap": [
             "src/migrations"
         ],
-        "psr-4": {
-            "seth-moore\\odbc-driver\\": "src/"
+        "psr-0": {
+            "Ccovey\\ODBCDriver": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
