@@ -24,6 +24,5 @@
         "psr-0": {
             "Ccovey\\ODBCDriver": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
