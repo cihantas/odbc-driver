@@ -36,7 +36,7 @@ class ODBCDriverConnectionFactory extends ConnectionFactory
 		throw new \InvalidArgumentException("Unsupported Driver [{$config['driver']}]");
 	}
 
-	public function createConnection($driver, \PDO $connection, $database, $prefix ='', array $config = array())
+	public function createConnection($driver, $connection, $database, $prefix ='', array $config = array())
 	{
 		if ($this->container->bound($key = "db.connection.{$driver}"))
 		{
@@ -55,7 +55,7 @@ class ODBCDriverConnectionFactory extends ConnectionFactory
 
             case 'sqlsrv':
                 return new SqlServerConnection($connection, $database, $prefix, $config);
-                
+
             case 'odbc':
                 return new ODBCDriverConnection($connection, $database, $prefix, $config);
         }
